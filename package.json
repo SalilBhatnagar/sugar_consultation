@@ -1,0 +1,60 @@
+{
+  "name": "consultation",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "https://www.api.com",
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "@material-ui/pickers": "^3.3.10",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0-beta1",
+    "cors": "^2.8.5",
+    "date-fns": "^2.28.0",
+    "http-proxy-middleware": "^2.0.6",
+    "proxy": "https://www.api.com",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-elastic-carousel": "^0.11.5",
+    "react-redux": "^8.0.2",
+    "react-router": "^5.2.1",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.5",
+    "validator": "^13.7.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.9.3",
+    "@mui/x-date-pickers": "^5.0.0-beta.3",
+    "@mui/x-date-pickers-pro": "^5.0.0-beta.0"
+  }
+}

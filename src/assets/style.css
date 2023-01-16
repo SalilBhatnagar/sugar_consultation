@@ -1,0 +1,1186 @@
+* {
+  margin: 0;
+  max-width: 100%;
+}
+
+body {
+  font-family: Jost;
+  padding: 0 !important;
+}
+
+.green {
+  color: #59702f;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+
+.unl {
+  text-decoration: underline;
+}
+
+.unl:hover {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+p{
+  margin: 0 !important;
+}
+
+p.error {
+  color: red;
+  font-size: medium;
+  display: none;
+}
+
+/************************************************/
+.dc-consultation {
+  background-image: url("https://cdn11.bigcommerce.com/s-2qk49wb9fq/content/health-tech-doc-consult/img/dc-background.png");
+  background-size: 100%;
+  padding: 6% 5% !important;
+}
+
+#date-time {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.dc-header {
+  margin: 2% 0 4% 0;
+  text-align: left;
+}
+
+.mobile {
+  display: none;
+}
+
+.dc-header img {
+  width: 20%;
+}
+
+.dc-consultation .dc-banners {
+  display: grid;
+  width: 100%;
+  justify-content: right;
+  column-gap: 2%;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 2.5%;
+}
+
+input#whatsapp {
+  accent-color: #80a03c;
+}
+
+.dc-banners .dc-banner-text {
+  width: 100%;
+  margin-left: 1%;
+  text-align: left;
+  display: none;
+}
+
+.dc-banners .dc-banner-text h1 {
+  margin: 0 0 2% 0;
+  font-size: 2.4rem;
+}
+
+.dc-banners .dc-banner-text p {
+  margin: 0 0 2% 0;
+  font-size: 1.5rem;
+}
+
+.dc-banners .dc-banner-img {
+  width: 100%;
+}
+
+h3.tellusmore {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 450px) {
+  .dc-consultation {
+    background: none;
+    background-image: url("https://store-5h8rqg02f8.mybigcommerce.com/content/health-tech-doc-consult/img/dc-background-mobile.png");
+    background-size: 100%;
+    padding: 25% 5% 5%!important;
+    position: relative;
+  }
+  .dc-consultation .dc-banners {
+    display: block;
+    justify-content: right;
+    margin-bottom: 2.5%;
+  }
+
+  #date-time {
+    font-size: 0.6rem !important;
+    margin: 0;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .dc-header img {
+    width: 45%;
+  }
+
+  .date,
+  .time {
+    grid-row-gap: 25%;
+    display: grid;
+    row-gap: 6% !important;
+  }
+
+  label {
+    display: inline-block;
+    font-size: 0.8rem !important;
+  }
+
+  .date,
+  .time {
+    /* grid-row-gap: 25%; */
+    display: grid;
+    /* row-gap: 25%; */
+    margin-top: 5% !important;
+  }
+
+  .dc-banners .dc-banner-text h1 {
+    font-size: 1.25rem !important;
+    text-align: center;
+  }
+
+  .dc-banners .dc-banner-text p {
+    margin: 0 0 4% 0;
+    font-size: 0.8rem !important;
+    text-align: center;
+  }
+
+  .dc-banners .dc-banner-img {
+    margin-bottom: 8%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dc-consultation {
+    padding: 6% 5%;
+  }
+
+  .dc-banners .dc-banner-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .dc-banners .dc-banner-text p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .dc-consultation {
+    padding: 6% 10% 5% 10%;
+  }
+
+  .dc-banners .dc-banner-text h2 {
+    font-size: 2rem !important;
+  }
+
+  .dc-banners .dc-banner-text p {
+    font-size: 1.1rem;
+  }
+  .dc-therepys img {
+    align-self: center;
+    height: 75% !important;
+    width: 21% !important;
+  }
+  .dc-therepys p {
+    font-size: 0.7rem !important;
+    margin: 4% 0;
+    width: 50% !important;
+  }
+}
+
+/*************************************************/
+
+.dc-consultation-form {
+  text-align: -webkit-center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.css-igs3ac {
+  border: 0 !important;
+}
+
+.dc-consultation-form h1 {
+  margin: 0 0 3% 0;
+}
+
+.dc-consultation-form-step-1 {
+  width: 70%;
+  text-align: left;
+}
+
+form.row.g-3 {
+  margin: 2% 0;
+}
+
+.dc-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-end: 4;
+  column-gap: 4%;
+  row-gap: 14%;
+  width: 100%;
+  margin: 3% 0;
+  padding: 0 !important;
+}
+
+.row {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  border: 0.3px solid #cbcbcb;
+  /* padding: 4% 2% 4% 5% !important; */
+  background-color: #fffbf6 !important;
+  width: 100%;
+  height: auto !important;
+}
+
+input#concern {
+  padding: 2% 2% 2% 3% !important;
+  margin-bottom: 5%;
+}
+
+.dc-whatsapp-tick {
+  margin: 3% 0;
+}
+
+.dc-whatsapp-tick label {
+  margin-left: 1%;
+}
+
+.dc-therepys {
+  width: 100%;
+  display: grid;
+  grid-auto-columns: max-content;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3%;
+  grid-row-gap: 12%;
+  margin-bottom: 3%;
+}
+
+input[type="radio"]:checked + label {
+  border: 3px solid #80a03c;
+}
+
+input[type="radio"]:checked {
+  display: block;
+  accent-color: #80a03c;
+  right: 0.8px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.dc-therepys .therapy {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 1%;
+}
+
+input[type="radio"] {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  zoom: 1.3;
+  display: none;
+}
+
+.dc-therepys .input [type="checkbox"]::-ms-check {
+  width: 50px;
+}
+
+.dc-therepys label {
+  border: 1px solid;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  background-color: rgba(242, 241, 235, 100%);
+}
+
+.dc-therepys img {
+  width: 30%;
+  align-self: center;
+}
+
+.dc-therepys p {
+  width: 50%;
+  margin: 4% 0%;
+  font-size: 1rem;
+}
+
+.dc-consultation h3 {
+  margin: 2% 0;
+}
+
+.jYxeHE {
+  background-color: rgba(128, 160, 60, 1) !important;
+  box-shadow: 0 0 1px 3px #80a03c !important;
+}
+
+.eWjCzc,
+.eAyARa,
+.hJJzxj,
+.hJKYRZ {
+  display: none !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.form-select {
+  line-height: 1.4 !important;
+  border-radius: 0 !important;
+  padding: 1rem 2.25rem 1rem 0.75rem;
+  height: auto;
+}
+
+.MuiOutlinedInput-root,.MuiFormControl-root, .MuiInputBase-root{
+  width: 100% !important;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 450px) {
+  .dc-therepys img {
+    width: 50%;
+  }
+
+  .date,
+  .time {
+    /* grid-row-gap: 25%; */
+    display: grid;
+    /* row-gap: 25%; */
+    margin-top: 5%;
+  }
+
+  .dc-whatsapp-tick {
+    margin: 2% 0 important;
+  }
+
+  .dc-form {
+    margin: 0% 0 !important;
+    padding: 0 !important;
+  }
+
+  .dc-therepys p {
+    font-size: 0.6rem !important;
+  }
+
+  input[type="date"],
+  input[type="email"],
+  input[type="number"],
+  input[type="text"],
+  select {
+    /* font-size: 0.6rem !important; */
+    margin-bottom: 3%;
+    padding: 6.5px 14px !important;
+    height: auto !important;
+  }
+}
+
+input#date {
+  padding: 7% 2% 7% 5% !important;
+}
+
+
+
+.time,
+.date {
+  display: grid;
+  row-gap: 25%;
+}
+
+.dc-form-submit {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.dc-form-submit input[type="Submit"] {
+  width: 30%;
+  padding: 1% 1%;
+  background-color: #80a03c;
+  border: 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+h1.treatment-count {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 0;
+  margin-top: 4%;
+  color: #425f2c;
+}
+
+@media screen and (max-width: 450px) {
+  .dc-consultation {
+    padding: 20% 5% 5%!important;
+  }
+
+  input[type="radio"] {
+    zoom: 1 !important;
+  }
+
+  .dc-consultation-form h1 {
+    margin: 0 0 3% 0;
+    font-size: 1rem;
+  }
+  .dc-therepys p {
+    font-size: 0.79rem !important;
+    margin: 0;
+    padding: 2%;
+    width: 100%;
+  }
+
+  .dc-header img {
+    width: 35% !important;
+  }
+
+  input#concern {
+    margin-bottom: 0% !important;
+  }
+
+  h3.tellusmore {
+    font-size: 0.7rem;
+    text-align: left !important;
+    margin-bottom: 1%;
+  }
+
+  h1.treatment-count {
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #425f2c;
+  }
+
+  .dc-selector {
+    margin: 3% 0;
+  }
+  .dc-therepys {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .dc-therepys label {
+    height: 75px !important;
+  }
+
+  .dc-therepys {
+    margin-bottom: 9% !important;
+  }
+
+  input[type="date"],
+  input[type="email"],
+  input[type="number"],
+  input[type="text"],
+  select {
+    font-size: 1rem !important;
+    /* margin-bottom: 5%; */
+  }
+
+  .form-select {
+    line-height: 1.4 !important;
+    border-radius: 0 !important;
+    padding: 0.5rem 2.25rem 0.5rem 0.75rem;
+    height: auto !important;
+}
+
+  p.error {
+    color: red;
+    font-size: 0.5rem;
+    display: none;
+  }
+
+  .dc-consultation-form-step-1 {
+    width: 100%;
+    text-align: left;
+  }
+
+  .dc-consultation-form h3 {
+    text-align: center;
+  }
+
+  .dc-form {
+    margin: 0% 0 !important;
+    padding: 0 !important;
+  }
+
+  .g-3,
+  .gx-3 {
+    --bs-gutter-x: 0 !important;
+  }
+
+  .dc-whatsapp-tick {
+    padding: 0 !important;
+    margin: 2% 0 !important;
+  }
+
+  .dc-whatsapp-tick label {
+    font-size: 0.7rem !important;
+    margin-left: 3%;
+  }
+
+  .treatment-image {
+    width: 40%;
+    height: 55%;
+  }
+
+  .mobile-width {
+    width: 82% !important;
+  }
+
+  .treatment .treatment-image img {
+    width: 100%;
+  }
+
+  .dc-therepys img {
+    height: 38% !important;
+    margin-top: 6% !important;
+    width: 25% !important;
+  }
+  .dc-form-submit input[type="Submit"] {
+    font-weight: 700;
+    font-size: 1.1rem;
+    width: 47%;
+    padding: 2% 2%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dc-whatsapp-tick label {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dc-therepys {
+    padding: 0 !important;
+  }
+
+  .dc-therepys label {
+    display: block;
+  }
+
+  .dc-therepys img {
+    width: 25%;
+    height: 46%;
+    margin-top: 12%;
+  }
+
+  .dc-therepys p {
+    width: 100%;
+    margin: 0% 0%;
+    font-size: 0.8rem;
+    padding: 0px;
+  }
+}
+
+/***********************************************************/
+
+.dc-doctor-details {
+  text-align: center;
+}
+
+.dc-doctor-cards {
+  width: 100%;
+  column-gap: 5%;
+  justify-items: center;
+}
+
+.dc-card {
+  width: 100%;
+  padding: 5%;
+  text-align: -webkit-center;
+}
+
+.dc-card .doctor-image {
+  width: 158px;
+  height: 180px;
+}
+
+.dc-card .doctor-image img {
+  border-radius: 6%;
+}
+
+.dc-card h2.doctor-name {
+  font-size: 1.5rem;
+  margin: 4% 0 0;
+}
+
+p.doctor-detail {
+  margin: 0;
+}
+
+h2.doctor-qualification {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.doctor-experience {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.doctor-experience p {
+  margin: 0;
+}
+
+h3.dc._thankyou {
+  text-align: center;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+/**********************************************************/
+
+h3.dc-acheivement-head {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.dc-acheivements {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 4% 2%;
+}
+
+.acheiventent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.acheivement-img {
+  border-radius: 66px;
+  height: 105px;
+  text-align: center;
+  width: 34.5%;
+}
+
+.acheivement-img img {
+  width: 100%;
+  margin: 6% 0;
+}
+
+p.acheivement-description {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.dc-book-consulation {
+  text-align: -webkit-center;
+  margin: 5% 0;
+}
+
+button.btn-book {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  background-color: #6a8330;
+  padding: 1%;
+  border: 0;
+  align-items: baseline;
+  border-radius: 7px;
+}
+
+.btn-initial {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 4%;
+}
+
+p.btn-text {
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+
+.btn-image {
+  width: 16%;
+}
+
+.dc-alerts {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  top: 32.5%;
+  left: 40%;
+}
+
+.alert_background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(140, 135, 135, 75%);
+  z-index: 1000;
+}
+
+.dc-treatments {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 4% 0;
+}
+
+.MuiStack-root {
+  height: 100% !important;
+}
+
+.MuiAlert-root {
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  text-align: center;
+  /* height: 100%; */
+  background-color: #fffbf6 !important;
+  color: #ef5350 !important;
+  border: 3px solid #ef5350 !important;
+}
+
+.MuiAlert-message {
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  text-align: center;
+  padding-top: 4px !important;
+  color: rgba(0, 0, 0, 0) !important;
+  height: 100%;
+  width: 100%;
+}
+
+.MuiAlert-outlined {
+  border: 5px solid;
+}
+
+.dc-loading-icon {
+  width: 100%;
+  text-align: -webkit-center;
+  /* text-align: center; */
+}
+
+.loader {
+  border: 12px solid #f3f3f3;
+  border-top: 12px solid #80a03c;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.MuiAlertTitle-root {
+  font-size: 2rem !important;
+  padding: 0;
+}
+
+input#alert-submit {
+  width: 50%;
+  padding: "5% 20%";
+}
+
+.MuiAlert-icon {
+  font-size: 1.8rem !important;
+  margin: 0 !important;
+}
+
+.MuiButton-root {
+  margin-top: 20%;
+  width: 50%;
+}
+
+@media screen and (max-width: 450px) {
+  h3.dc-acheivement-head {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #80a03c;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1.5s linear infinite;
+  }
+
+  .dc-loading-icon {
+    width: 100%;
+    text-align: -webkit-center;
+    /* text-align: center; */
+    margin: 5% 0;
+  }
+
+  .dc-alerts {
+    width: 50%;
+    height: 25%;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+  }
+
+  .MuiAlert-root {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    text-align: center;
+    height: inherit;
+  }
+
+  .MuiAlert-message {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    text-align: center;
+    padding: 4px 0 !important;
+  }
+
+  .MuiAlert-icon {
+    margin: 0 !important;
+  }
+
+  h3.dc._thankyou {
+    font-size: 1rem;
+  }
+
+  .btn-image {
+    width: 28%;
+  }
+
+  .dc-acheivements {
+    display: block;
+    margin: 4% 2%;
+  }
+
+  .doctor-experience {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 0.68rem;
+  }
+
+  p.acheivement-description {
+    font-size: 0.9rem;
+    width: 52%;
+  }
+
+  .acheivement-img {
+    height: 77px;
+  }
+
+  .acheivement-img img {
+    width: 60% !important;
+  }
+
+  button.btn-book {
+    width: 56%;
+    padding: 1%;
+    border: 0;
+    align-items: center;
+    border-radius: 7px;
+    place-items: baseline;
+  }
+
+  p.btn-text {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .dc-acheivements {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 4% 2%;
+    }
+
+    .acheivement-img img {
+      width: 80%;
+      margin: 4% 0;
+    }
+  }
+
+  /**********************************************/
+
+  @media screen and (max-width: 450px) {
+    .dc-treatments {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      justify-items: center;
+    }
+    /* .dc-treatments .treatment .treatment-image{
+      width: 50%;
+    } */
+    p.treatment-text {
+      font-size: 12px !important;
+    }
+  }
+
+  .treatment {
+    width: 100%;
+    height: 11rem;
+    text-align: -webkit-center;
+  }
+
+  p.treatment-text {
+    width: 80%;
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  /************************************************/
+  .dc-consult-queries {
+    text-align: center !important;
+    margin-top: 10%;
+    line-height: 20px;
+  }
+  .dc-consult-queries .dc-consult-head {
+    margin-bottom: 10px;
+  }
+  .dc-consult-queries .green {
+    margin: 7% 0;
+  }
+}
+
+.dc-selector {
+  margin: 3% 0;
+  padding: 0 6%;
+}
+
+.dc-card-mobile {
+  border: 1px solid hsla(0, 6%, 67%, 0.59);
+  border-radius: 5px;
+  height: 420px;
+  margin: 1%;
+  padding: 4% 1%;
+}
+
+.thankyou {
+  box-shadow: 0px 0px 5px 0px #80a03c;
+  box-shadow: inset 0px 0px 5px #80a03c;
+  width: 100%;
+  padding: 5% 5%;
+}
+
+p.question {
+  margin: 1.5% 0;
+  padding: 0.25% 5% 0.25% 0;
+  border-bottom: 1px solid;
+  font-weight: 700;
+  text-align: left;
+  background-image: url(https://cdn11.bigcommerce.com/s-2qk49wb9fq/content/health-tech-doc-consult/img/down-arrow.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  font-size: 1.2rem;
+}
+
+p.answer {
+  margin: 0;
+  padding: 1% 0;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 450px) {
+  .dc-consult-queries .dc-consult-head {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  p.answer {
+    font-size: 0.7rem;
+  }
+
+  p.question {
+    font-size: 0.7rem;
+    background-size: 4%;
+  }
+  .dc-consult-queries .faq {
+    font-size: 15px;
+    margin: 5% 0;
+  }
+
+  .dc-consult-queries .clickhere {
+    font-size: 12px;
+  }
+
+  .dc-consult-queries .feelfree {
+    font-size: 12px;
+  }
+  .dc-selector {
+    margin: 6% 0;
+    padding: 0 6%;
+  }
+}
+
+/****************************************************/
+
+.dc-why-kapiva {
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .dc-why-kapiva p {
+    font-size: 12px;
+  }
+
+  .dc-why-kapiva h3 {
+    font-size: 17px;
+  }
+  h3.why-head {
+    margin-top: 10px;
+  }
+}
+
+h3.why-head {
+  font-weight: 300;
+}
+
+/* ******************** */
+
+@media screen and (min-width: 451px) {
+  .mobile-slide {
+    display: none;
+  }
+}
+.mySlides {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .dc-doctor-details {
+    text-align: center;
+  }
+
+  .dc-doctor-cards {
+    display: block;
+    justify-items: center;
+    margin: 5% 0;
+    width: 100%;
+  }
+
+  .dc-card-mobile {
+    border: 0;
+    display: flex;
+    height: 100% !important;
+    justify-content: space-between;
+    margin: 1%;
+    width: 100%;
+  }
+
+  .dc-card {
+    width: 100%;
+    padding: 0;
+    border: 1px solid rgb(176 166 166 / 59%);
+    padding: 2% 1%;
+    border-radius: 5px;
+  }
+
+  .dc-card p.doctor-info {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .dc-card .doctor-image {
+    width: 40%;
+    height: 100% !important;
+  }
+
+  .mobile-detail {
+    text-align: left;
+    width: 56%;
+  }
+
+  .dc-card h2.doctor-name {
+    font-size: 1rem;
+  }
+
+  p.doctor-detail {
+    font-size: 0.7rem;
+  }
+
+  .doctor-experience {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .doctor-experience p {
+    margin: 0;
+  }
+}
+
+
+
+/*************** Integration ************/
+
+.page-content {
+  margin: 0 !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+.container {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.page-heading {
+  display: none !important;
+}
+
+ol.breadcrumbs {
+  display: none !important;
+}
